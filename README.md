@@ -1,4 +1,6 @@
-# CSE 210 Articulate Projects
-This repo contains the starter code for the CSE 210 Solo Projects for the Articulate competency.
+# CSE 210 Prepare Source Code
+This repo contains the incomplete source code for the CSE 210 preparation 
+assignments and the Articulate competency.
 
-It should be cloned by each person in the class and used as a starting point for these projects.
+It should be cloned by each person in the class and used as directed on the 
+prepare assignment page.
