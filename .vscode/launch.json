@@ -10,6 +10,7 @@
             "args": [],
             "cwd": "${workspaceFolder}/Unit02",
             "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
             "stopAtEntry": false
         },
         {
@@ -21,6 +22,7 @@
             "args": [],
             "cwd": "${workspaceFolder}/Unit03",
             "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
             "stopAtEntry": false
         },
         {
@@ -32,6 +34,7 @@
             "args": [],
             "cwd": "${workspaceFolder}/Unit04",
             "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
             "stopAtEntry": false
         },
         {
@@ -43,6 +46,7 @@
             "args": [],
             "cwd": "${workspaceFolder}/Unit05",
             "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
             "stopAtEntry": false
         },
         {
@@ -54,6 +58,7 @@
             "args": [],
             "cwd": "${workspaceFolder}/Unit06",
             "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
             "stopAtEntry": false
         }
     ]
