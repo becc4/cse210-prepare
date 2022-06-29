@@ -31,17 +31,18 @@ namespace Unit06.Game.Services
             foreach (string filepath in filepaths)
             {
                 Raylib_cs.Sound sound = Raylib.LoadSound(filepath);
-                sounds[filepath] = sound;
+                sounds[Path.GetFileName(filepath)] = sound;
             }
         }
  
         /// </inheritdoc>
         public void PlaySound(Casting.Sound sound)
         {
+
             string filename = sound.GetFilename();
-            if (sounds.ContainsKey(filename))
+            if (sounds.ContainsKey(Path.GetFileName(filename)))
             {
-                Raylib_cs.Sound raylibSound = sounds[filename];
+                Raylib_cs.Sound raylibSound = sounds[Path.GetFileName(filename)];
                 Raylib.PlaySound(raylibSound);
             }
         }
