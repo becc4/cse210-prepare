@@ -11,6 +11,7 @@ namespace Unit02.Game
     /// </summary>
     public class Director
     {
+        // Attributes
         List<Die> _dice = new List<Die>();
         bool _isPlaying = true;
         int _score = 0;
@@ -46,7 +47,7 @@ namespace Unit02.Game
         /// </summary>
         public void GetInputs()
         {
-            Console.Write("Roll dice? [y/n] ");
+            Console.Write("Roll dice? [y/n] "); // giving an output so that we can get an input
             string rollDice = Console.ReadLine();
             _isPlaying = (rollDice == "y");
         }
@@ -65,7 +66,7 @@ namespace Unit02.Game
             foreach (Die die in _dice)
             {
                 die.Roll();
-                _score += die.points;
+                _score += die._points;
             }
             _totalScore += _score;
         }
@@ -83,9 +84,10 @@ namespace Unit02.Game
             string values = "";
             foreach (Die die in _dice)
             {
-                values += $"{die.value} ";
+                values += $"{die._value} ";
             }
 
+            // Services (printing to console)
             Console.WriteLine($"You rolled: {values}");
             Console.WriteLine($"Your score is: {_totalScore}\n");
             _isPlaying = (_score > 0);
