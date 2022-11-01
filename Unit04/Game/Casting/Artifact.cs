@@ -5,7 +5,7 @@ namespace Unit04.Game.Casting{
         /// The responsibility of an Artifact is to provide a message about itself.
         /// </para>
         /// </summary>
-    class Artifact : Actor{
+    public class Artifact : Actor{
         private string _artifact;
         /// <summary>
         /// Constructs a new instance of Artifact.
