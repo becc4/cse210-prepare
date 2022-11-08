@@ -15,6 +15,7 @@ namespace Unit05.Game.Scripting
     /// The responsibility of MoveActorsAction is to move all the actors.
     /// </para>
     /// </summary>
+    public interface MoveActorsAction : Action {
 
     // 2) Create the class constructor. Use the following method comment.
 
@@ -28,4 +29,4 @@ namespace Unit05.Game.Scripting
     //    b) loop through all the actors
     //    c) call the MoveNext() method on each actor.
 
-}
+}}
