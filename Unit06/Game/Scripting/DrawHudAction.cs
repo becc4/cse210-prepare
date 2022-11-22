@@ -1,5 +1,6 @@
 using Unit06.Game.Casting;
 using Unit06.Game.Services;
+using System;
 
 
 namespace Unit06.Game.Scripting
@@ -26,12 +27,13 @@ namespace Unit06.Game.Scripting
         // **********************************************************************************************
         // todo: fix the bug by making sure the text value is set to the appropriate variable.
         private void DrawLabel(Cast cast, string group, string format, int data)
+        // cast, an instance of cast; group, group names (from constants); format, constant variables; stats, 
         {
             string theValueToDisplay = string.Format(format, data);
             
             Label label = (Label)cast.GetFirstActor(group);
-            Text text = label.GetText();
-            text.SetValue(format);
+            Text text = label.GetText(); 
+            text.SetValue(theValueToDisplay);
             Point position = label.GetPosition();
             _videoService.DrawText(text, position);
         }
